@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>Ted Talks</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="custom.css">
+	</head>
+	<body>
+		<div class="jumbotron jumbotron-fluid">
+	  		<div class="container">
+	    		<h1>Ted Talks</h1>      
+	    		<p>TED Talks are influential videos from expert speakers on education, business, science, tech and creativity, with subtitles in 100+ languages. TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.</p>
+	  		</div>
+		</div>
+		<div class="container">
+	  		<div class="clearfix">
+			  <div class="float-left"><div id="results_data" style="font-size:12px;">results are showing based on your interests</div><h1>Results</h1></div>
+			  <div class="float-right"><input class="form-control" type="text" placeholder="Search by events/tags/name/speaker occupation/title" aria-label="Search" size="90" style="height:50px;" id="searchInput"></div>
+			</div>
+	  	</div>
+	  	<div class="container">
+	  		<div class="clearfix">
+			  <div class="float-left">Sort by:
+				<div class="form-check-inline">
+				  <label class="form-check-label">
+				    <input type="radio" class="form-check-input" name="optradio" value="published_date">Latest uploads
+				  </label>
+				</div>
+				<div class="form-check-inline">
+				  <label class="form-check-label">
+				    <input type="radio" class="form-check-input" name="optradio" value="view" checked>highest views
+				  </label>
+				</div>
+				</div>
+			  <div class="float-right">
+			  </div>
+			</div>
+	  	</div>
+	  	<div class="container" id="results">
+	  	<hr/>
+	  	</div>
+	  	<footer class="page-footer font-small special-color-dark pt-4">
+    		<div class="footer-copyright text-center py-3">© 2018 Copyright:
+      			<a href="https://www.ted.com/"> TedTalks.com</a>
+    		</div>
+  		</footer>  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	  	<script src="custom.js"></script>
+	</body>
+</html>

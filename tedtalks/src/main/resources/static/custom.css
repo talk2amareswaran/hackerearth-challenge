@@ -1,0 +1,18 @@
+.jumbotron {
+	background: linear-gradient(45deg, rgb(173, 0, 0) 0%, rgb(97, 18, 18) 100%);
+	position: relative;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px, rgba(0, 0, 0, 0.075) 0px 0px 30px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 7px inset, rgba(0, 0, 0, 0.2) 0px -3px 7px inset;
+	padding: 40px 0px;
+}
+
+.recommends_container {
+	background: linear-gradient(45deg, rgb(1, 40, 4) 0%, rgb(0, 99, 22) 100%);
+	min-height: 500px;
+}
+
+.buttons_group {
+	padding: 50px;
+}
