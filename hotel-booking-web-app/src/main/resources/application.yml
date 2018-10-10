@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: hotel app
+  datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: "jdbc:mysql://localhost:3306/hotelapp?autoreconnect=true"
+        password: "root"
+        username: "root"
+        testOnBorrow: true
+        testWhileIdle: true
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 30000
+        validationQuery: SELECT 1
+        max-active: 15
+        max-idle: 10
+        max-wait: 8000
+        
+server:
+  port: 8080
+  
+config: 
+  oauth2: 
+    privateKey: -----BEGIN RSA PRIVATE KEY-----MIIEpAIBAAKCAQEA46tqFqYbtnFS4E0X2bVEuXCEn0nuxXoKx1csrmCxaM7+1Po+dpO1jsrxlbtkLpU2nYk8Q3gbnHIicEVqMmOct8kc+mDZj/hloPhcm5r3mMhZipcpxu5Ua36guBh5kCEfiHIBV/wKZ+msKLyBxiYOIu8VKlkKAGfCmOYW4W1cOQXfY5ptnbvNC9OcBH9nkAlX85IvtxLkyUQwbfKr9AOpg9B3Q/td4XGpzknC6ZbghYMMtYD1CNZXmTU2485i93zpa5DoAaRFNuNLx5v5PgxJOaxaN1zOzwr22HAyRfSJzaiTYzjqb6pqTfeAfkVAHABvaNZrNG0ftFchGthucT8X7wIDAQABAoIBAE9tbgWYzfJIdvFp8/gwFVnct2gbEwIyIbCJ6Tys3zgBf0YuR7x2q9C1XLMwPTNDO1qaljuzm25pIzqn/PS3a+VydHmlcEGaF1qhSy2+UsMqopKHSjvsyeb2tnuDjmWKKMYhf/aCJ9841qcfnObUP/pQDsJHbgXWLT3KiBD9Zj899M0YIGLo0KQxgDdZPG/JmKaQHhlS8ujBOmCb/0K7ghvzzn/XgzAHV/gfLbBRfAHwDUFV0yZzqD48U2dTQNoqdkTVh6tLuoAg5OceA4As22gqR6RKDsxUNlGY3S50Oc8YK5PIh1wRBImqbhwT13lsJylhLZOfnKlJaCJNtZDx5YECgYEA8ugzWOzAak2yzsIVDKZYoUHUkZkLX363J3t1QugFMONcz67KfVjOWCuZtD/Z9M7Qfm9JB1HlDreVMKEwid34Vjo0xL+gEHfYY0RIUUqBe7mTe73AzAPBpy00IVkK1TQjMPsrny7XclA72OheFpMtw0W1ZRxsnoZI72YDOiJx/g0CgYEA7/D0/iyrRIAemkhmjPkHgU6TG5fWTDEQ2f2GjFpW6k0VIKURUDyP4azRq/WGrjpqArQuBnp+d3AsossNL3ohUrVCM18t4dkSBIycF2aM0qOu/uqhtYKyzHgCCVHBqdBRT//sBvJxgaKPI6k6mskYiGzYCIxMo3nyDWNBf+wv6usCgYEAwK9nQ+wSOoFGDPMyJWWzOr/wskp4Fhl7imtJung43e4NioV6BPK0RIbZl31rFOIVy6XVhWP2UrVYOEo1KbgVrbjgcQ4dF9MpqJzazPlQO2gbUPZWAMAeFtIp3yY2DKgeHlWv5ccPipOQ1eCF+lxn2dXrLbjdhOa65oTCnJQEXuUCgYBLwqRIoSgOv/lps5SVzIe/H2U5oC6s7g0pF3DlXhz1bBNQtG4MDKNNmXi2uBanapBQfD3QE9tcsRGW8VAffouJBux5NgNRvW1//DnI9btfQwmdOc6HdlYoU3gpIyRoDvutq9wFsYV/bimOFAAKIZbadKudv1bvgzCXY5Cp6JSUswKBgQDJh942neLfHCaOsi8u8U5rtiN0zhBUIDBHdWnewb2ubKV4dbgVDTbioI3Qz+bffNoGgSn94pEHGDa7UgKnjfn7TSFOOA3yPMiLIQ5dMRlepEgzysWFAUY/dAkW8NB1W4X+6QQeWlbXnl4c5yoc8pJHYgCzym1ngekXYAHCqoN/4Q==-----END RSA PRIVATE KEY-----
+    publicKey: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA46tqFqYbtnFS4E0X2bVEuXCEn0nuxXoKx1csrmCxaM7+1Po+dpO1jsrxlbtkLpU2nYk8Q3gbnHIicEVqMmOct8kc+mDZj/hloPhcm5r3mMhZipcpxu5Ua36guBh5kCEfiHIBV/wKZ+msKLyBxiYOIu8VKlkKAGfCmOYW4W1cOQXfY5ptnbvNC9OcBH9nkAlX85IvtxLkyUQwbfKr9AOpg9B3Q/td4XGpzknC6ZbghYMMtYD1CNZXmTU2485i93zpa5DoAaRFNuNLx5v5PgxJOaxaN1zOzwr22HAyRfSJzaiTYzjqb6pqTfeAfkVAHABvaNZrNG0ftFchGthucT8X7wIDAQAB-----END PUBLIC KEY-----
+    clientid: talk2amareswaran
+    clientSecret: talk@amareswaran
+    
+security:
+    oauth2:
+        resource:
+            filter-order: 3 
+            jwt: 
+                key-value: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA46tqFqYbtnFS4E0X2bVEuXCEn0nuxXoKx1csrmCxaM7+1Po+dpO1jsrxlbtkLpU2nYk8Q3gbnHIicEVqMmOct8kc+mDZj/hloPhcm5r3mMhZipcpxu5Ua36guBh5kCEfiHIBV/wKZ+msKLyBxiYOIu8VKlkKAGfCmOYW4W1cOQXfY5ptnbvNC9OcBH9nkAlX85IvtxLkyUQwbfKr9AOpg9B3Q/td4XGpzknC6ZbghYMMtYD1CNZXmTU2485i93zpa5DoAaRFNuNLx5v5PgxJOaxaN1zOzwr22HAyRfSJzaiTYzjqb6pqTfeAfkVAHABvaNZrNG0ftFchGthucT8X7wIDAQAB-----END PUBLIC KEY-----

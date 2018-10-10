@@ -1,0 +1,173 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Segoe UI";
+}
+
+nav {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.dropdown-menu {
+	width: 350px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	color: red;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #dc3545;
+}
+
+.customDropdown.active, .customDropdown:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #dc3545;
+}
+
+.searchContainer {
+	margin-top: 7%;
+}
+
+#searchTxt {
+	height: 60px;
+}
+
+#searchTxt:focus {
+	outline: none;
+}
+
+.searchBtn {
+	width: 250px;
+	height: 60px;
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #dc3545;
+	box-shadow: none;
+}
+
+.has-search .form-control {
+	padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 2.375rem;
+	height: 2.375rem;
+	line-height: 3.95rem;
+	text-align: center;
+	pointer-events: none;
+	color: #dc3545;
+}
+
+.topDiv {
+	height: 45px;
+	padding-left: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.logo {
+	height: 30px;
+	width: 40px;
+}
+
+.ui-menu .ui-menu-item a {
+	font-family: "Segoe UI";
+	cursor: pointer;
+}
+
+/* .ui-menu-item:hover {
+	background-color:red;
+	color: rgb(255,255,255);
+} */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+	.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus
+	{
+	font-weight: normal;
+	color: red;
+	background: rgb(248, 249, 250);
+}
+
+.ui-menu-item:hover {
+	border: none;
+}
+
+.ui-autocomplete {
+	max-height: 200px;
+	overflow-y: auto;
+	/* prevent horizontal scrollbar */
+	overflow-x: hidden;
+	/* add padding to account for vertical scrollbar */
+	padding-right: 20px;
+}
+
+.searchResultContainer {
+	margin-top: 20px;
+}
+
+.checked {
+	color: orange;
+}
+
+.searchResultHeader {
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+.padding-top-15 {
+	padding-top: 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.themeColor {
+	color: #dc3545;
+}
+
+.fontSize20 {
+	font-size: 20px;
+}
+
+.location-icon {
+	font-size: 20px;
+	color: red;
+}
+
+ #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+
+#categoriesCheckBox {
+	overflow-y: scroll;
+	height: 800px;
+}
+
+.whiteColor {
+	color: rgb(255, 255, 255);
+}
+
+.page-link {
+	color: rgb(255, 255, 255);
+}
+
+.page-item.disabled .page-link {
+	color: rgb(255, 255, 255);
+}
+
+.page-link:hover {
+	color: #fff400;
+}
